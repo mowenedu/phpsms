@@ -44,7 +44,7 @@ class AliyunAgent extends Agent implements TemplateSms
                                         ],
                                     ])
                           ->request();
-            $this->setResult($result);
+            $this->setResult($result->toArray());
         } catch (ClientException $e) {
             $this->result(Agent::INFO, 'request failed. ' . $e->getErrorMessage() . PHP_EOL);
         } catch (ServerException $e) {
@@ -54,15 +54,10 @@ class AliyunAgent extends Agent implements TemplateSms
 
     protected function setResult($result)
     {
-        if ($result['request']) {
-            $this->result(Agent::INFO, $result['response']);
-            $result = json_decode($result['response'], true);
-            $this->result(Agent::CODE, $result['Code']);
-            if ($result['Code'] === 'OK') {
-                $this->result(Agent::SUCCESS, true);
-            }
+        if ($result['Code'] == 'OK') {
+            $this->result(Agent::SUCCESS, true);
         } else {
-            $this->result(Agent::INFO, 'request failed');
+            $this->result(Agent::INFO, $result['Message'] ?? 'request failed');
         }
     }
 
