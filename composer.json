@@ -1,21 +1,22 @@
 {
-  "name": "toplan/phpsms",
-  "description": "Probably the most intelligent, elegant sms send library in php",
+  "name": "xingbei437/x_phpsms",
+  "description": "Probably the most intelligent, elegant sms send library in php, fork form toplan/phpsms",
   "license": "MIT",
   "keywords": ["sms", "php", "phpsms", "sms library"],
   "authors": [
     {
-      "name": "toplan",
-      "email": "toplan710@gmail.com"
+      "name": "xingbei437",
+      "email": "xingbei437@163.com"
     }
   ],
   "require": {
-    "php": ">=5.4.0",
-    "toplan/task-balancer": "~0.5",
-    "jeremeamia/SuperClosure": "~2.2"
+    "php": "^7.2",
+    "xingbei437/x_task-balancer": "~0.5",
+    "jeremeamia/superclosure": "~2.2",
+    "alibabacloud/client": "^1.5"
   },
   "require-dev": {
-    "phpunit/phpunit": "~4.0"
+    "phpunit/phpunit": "~8.0"
   },
   "autoload": {
     "psr-4": {

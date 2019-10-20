@@ -1,8 +1,9 @@
 <?php
 
 use Toplan\PhpSms\Sms;
+use PHPUnit\Framework\TestCase;
 
-class ConfigTest extends PHPUnit_Framework_TestCase
+class ConfigTest extends TestCase
 {
     public function testClean()
     {

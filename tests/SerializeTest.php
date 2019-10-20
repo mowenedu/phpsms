@@ -2,12 +2,13 @@
 
 use Toplan\PhpSms\Agent;
 use Toplan\PhpSms\Sms;
+use PHPUnit\Framework\TestCase;
 
-class SerializeTest extends PHPUnit_Framework_TestCase
+class SerializeTest extends TestCase
 {
     protected static $sms;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         Sms::queue(false);
         Sms::cleanScheme();

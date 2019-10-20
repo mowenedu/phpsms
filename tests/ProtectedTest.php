@@ -1,8 +1,9 @@
 <?php
 
 use Toplan\PhpSms\Sms;
+use PHPUnit\Framework\TestCase;
 
-class ProtectedTest extends PHPUnit_Framework_TestCase
+class ProtectedTest extends TestCase
 {
     public static function getPrivateMethod($name)
     {

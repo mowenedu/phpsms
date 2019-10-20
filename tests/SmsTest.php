@@ -1,12 +1,13 @@
 <?php
 
 use Toplan\PhpSms\Sms;
+use PHPUnit\Framework\TestCase;
 
-class SmsTest extends PHPUnit_Framework_TestCase
+class SmsTest extends TestCase
 {
     protected static $sms = null;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         Sms::cleanScheme();
         Sms::scheme([

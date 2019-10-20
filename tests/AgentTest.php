@@ -3,12 +3,13 @@
 use Toplan\PhpSms\Agent;
 use Toplan\PhpSms\LogAgent;
 use Toplan\PhpSms\ParasiticAgent;
+use PHPUnit\Framework\TestCase;
 
-class AgentTest extends PHPUnit_Framework_TestCase
+class AgentTest extends TestCase
 {
     protected $agent = null;
 
-    public function setUp()
+    public function setUp():void
     {
         $config = [
             'key'  => 'value',
