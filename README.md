@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/xingbei437/x_phpsms.svg)](https://packagist.org/packages/xingbei437/x_phpsms)
 
 
-# From form toplan/phpsms
+#  php 短信发送库 Fork form toplan/phpsms
 
 ## Change
 
