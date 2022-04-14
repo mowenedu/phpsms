@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/xingbei437/x_phpsms.svg)](https://packagist.org/packages/xingbei437/x_phpsms)
 
 
-#  php 短信发送库 Fork form [toplan/phpsms](https://github.com/toplan/phpsms)
+#  php 短信发送库 Fork form [xingbei437/phpsms](https://github.com/xingbei437/phpsms)
 
 ## Change
 
