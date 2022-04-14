@@ -1,17 +1,17 @@
 {
-  "name": "xingbei437/x_phpsms",
-  "description": "Probably the most intelligent, elegant sms send library in php, fork form toplan/phpsms",
+  "name": "mowenedu/x_phpsms",
+  "description": "Probably the most intelligent, elegant sms send library in php, fork form xingbei437/phpsms",
   "license": "MIT",
   "keywords": ["sms", "php", "phpsms", "sms library"],
   "authors": [
     {
-      "name": "xingbei437",
-      "email": "xingbei437@163.com"
+      "name": "mowenedu",
+      "email": "2314601153@qq.com"
     }
   ],
   "require": {
     "php": "^7.2",
-    "xingbei437/x_task-balancer": "dev-master",
+    "xingbei437/x_task-balancer": "~0.5",
     "jeremeamia/superclosure": "~2.2",
     "alibabacloud/client": "^1.5"
   },
@@ -37,15 +37,5 @@
     "classmap": [
       "tests/"
     ]
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/mowenedu/phpsms.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/mowenedu/task-balancer.git"
-    }
-  ]
+  }
 }
