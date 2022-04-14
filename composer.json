@@ -11,7 +11,7 @@
   ],
   "require": {
     "php": "^7.2",
-    "xingbei437/x_task-balancer": "~0.5",
+    "xingbei437/x_task-balancer": "dev-master",
     "jeremeamia/superclosure": "~2.2",
     "alibabacloud/client": "^1.5"
   },
@@ -37,5 +37,11 @@
     "classmap": [
       "tests/"
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/mowenedu/phpsms.git"
+    }
+  ]
 }
