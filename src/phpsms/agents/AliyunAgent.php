@@ -56,6 +56,7 @@ class AliyunAgent extends Agent implements TemplateSms
     {
         if ($result['Code'] == 'OK') {
             $this->result(Agent::SUCCESS, true);
+            if (isset($result['BizId'])) $this->result(Agent::INFO, $result['BizId']);
         } else {
             $this->result(Agent::INFO, $result['Message'] ?? 'request failed');
         }
